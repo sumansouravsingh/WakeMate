@@ -1,6 +1,30 @@
-# WakeMate
-A lightweight utility that keeps your system awake
-Wake Mate is a lightweight and user-friendly desktop utility designed to prevent your computer from going into sleep mode or triggering screen savers by periodically simulating mouse movements. This app runs quietly in the background and ensures that your system stays active even during periods of inactivity—perfect for scenarios where system sleep could interrupt your workflow or connectivity.
+# Wake Mate – Keep Your System Awake Effortlessly
+# Description:
+Wake Mate is a lightweight desktop utility designed to prevent your computer from going to sleep or activating the screensaver. It works by periodically simulating subtle mouse movements, tricking your system into thinking it's active—even when you're not interacting with it directly.
+This tool is especially useful during long meetings, online classes, remote sessions, or continuous data processing tasks, where your system must remain awake and responsive without manual input. It features a simple graphical interface with Play, Pause, and Stop buttons for intuitive control.
 
-# Use Case:
-Imagine you're attending a long virtual meeting, webinar, or remote training session where you need to stay logged in, but there's minimal interaction on your part. Many corporate systems automatically lock the screen or go to sleep after a short idle period, which can be disruptive or even interpreted as non-participation. Wake Mate solves this problem by gently moving the mouse at regular intervals, mimicking activity so your system remains awake and engaged without interfering with your actual usage. This makes it an ideal companion for professionals, students, or IT administrators who need to keep their systems responsive without manual input.
+# Key Features:
+- Keeps your system awake by moving the mouse at regular intervals.
+- Simple GUI with play/pause/stop controls.
+- Clean, distraction-free design.
+- Lightweight and runs silently in the background.
+- Prevents screen lock, screen dimming, and system sleep.
+
+# Use Case Example:
+You're attending a virtual conference that lasts several hours, with long stretches of listening and minimal interaction. Normally, your system would go idle and sleep or lock the screen—interrupting your connection or making it seem like you're inactive. Wake Mate keeps your system engaged, ensuring uninterrupted presence and productivity.
+
+# Required Python Packages:
+To run Wake Mate, the following Python packages are required:
+
+```pyautogui``` – to simulate mouse movement.
+
+```pillow``` – to handle image files for GUI icons.
+
+```tkinter``` – for the graphical user interface (standard with most Python installations).
+
+# How to run
+- Download all the files under src folder.
+- Open your terminal and run the following command - ```python wake_mate.py```
+- For windows: You can alternatively download the zip folder and extract it. Then run the win_mate.exe under dist folder
+- If you are on mac: You can run the following command to create an exe of the project and run the exe
+  ```pyinstaller --onefile --windowed --add-data "icons:icons" --icon=app.ico wake_mate.py```
