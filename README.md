@@ -25,6 +25,12 @@ To run Wake Mate, the following Python packages are required:
 # How to run
 - Download all the files under src folder.
 - Open your terminal and run the following command - ```python wake_mate.py```
-- For windows: You can alternatively download the zip folder and extract it. Then run the win_mate.exe under dist folder
-- If you are on mac: You can run the following command to create an exe of the project and run the exe
+
+# To create an executable
+- Download all the files under src folder.
+- Make sure you have python's ```pyinstaller``` package installed.
+- Navigate to the folder where you have the downloaded files.
+- For windows: Run the following command
+  - ```pyinstaller --onefile --windowed --add-data "icons;icons" --icon=app.ico wake_mate.py```
+- For mac: Run the following command
   ```pyinstaller --onefile --windowed --add-data "icons:icons" --icon=app.ico wake_mate.py```
