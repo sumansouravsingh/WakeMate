@@ -33,4 +33,4 @@ To run Wake Mate, the following Python packages are required:
 - For windows: Run the following command
   - ```pyinstaller --onefile --windowed --add-data "icons;icons" --icon=app.ico wake_mate.py```
 - For mac: Run the following command
-  ```pyinstaller --onefile --windowed --add-data "icons:icons" --icon=app.ico wake_mate.py```
+  - ```pyinstaller --onefile --windowed --add-data "icons:icons" --icon=app.ico wake_mate.py```
