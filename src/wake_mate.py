@@ -94,7 +94,7 @@ class WakeMateApp:
         finally:
             if sys.platform == "win32":
                 logging.info("Net")
-                #ctypes.windll.kernel32.SetThreadExecutionState(0x80000000)
+                ctypes.windll.kernel32.SetThreadExecutionState(0x80000000)
             logging.info("Worker thread exited")
 
     def start(self):
